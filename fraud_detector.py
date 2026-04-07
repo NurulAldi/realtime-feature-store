@@ -4,8 +4,8 @@ import random
 
 redis_client = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
-MAX_SPENDING_1MIN = 40000.0
-MAX_TX_COUNT_1MIN = 20
+MAX_SPENDING_1MIN = 10000.0
+MAX_TX_COUNT_1MIN = 5
 
 def check_fraud(user_id, current_amount):
     redis_key = f"user_features:{user_id}"
