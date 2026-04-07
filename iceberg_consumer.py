@@ -65,7 +65,7 @@ consumer.subscribe(['transactions'])
 print("Memulai Ingestor Kafka ke Iceberg...")
 
 buffer = []
-BATCH_SIZE = 1000 # Setiap 1000 transaksi, commit menjadi 1 file Parquet di Iceberg
+BATCH_SIZE = 1000
 
 try:
     while True:

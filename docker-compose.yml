@@ -1,6 +1,5 @@
 services:
   zookeeper:
-    # Menggunakan Public ECR Bitnami (Lebih stabil dari Docker Hub)
     image: public.ecr.aws/bitnami/zookeeper:3.9
     ports:
       - "2181:2181"
